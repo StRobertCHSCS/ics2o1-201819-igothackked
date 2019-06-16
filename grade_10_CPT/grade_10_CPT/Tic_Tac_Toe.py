@@ -60,6 +60,25 @@ def on_mouse_press(x, y, button, modifiers):
     if current_screen == 0:
         if (x > 165 and x < 335 and y > 165 and y < 335):
             current_screen = 1
+            circle_1_x = 1000
+            circle_1_y = 1000
+            circle_2_x = 1000
+            circle_2_y = 1000
+            circle_3_x = 1000
+            circle_3_y = 1000
+            circle_4_x = 1000
+            circle_4_y = 1000
+            circle_5_x = 1000
+            circle_5_y = 1000
+            x_1_x = 1000
+            x_1_y = 1000
+            x_2_x = 1000
+            x_2_y = 1000
+            x_3_x = 1000
+            x_3_y = 1000
+            x_4_x = 1000
+            x_4_y = 1000
+
     if current_screen == 0:
         if (x > 335 and x < 500 and y > 0 and y < 335):
             current_screen = 2
@@ -408,18 +427,78 @@ def on_mouse_press(x, y, button, modifiers):
                 circle_5_y = 150
                 counter = counter + 1
 
-        if (x > 20 and x > 70 and y < 430 and y > 480):
+    if current_screen == 1:
+        # back button
+        if(x > 30 and x < 130 and y < 475 and y > 425):
+            circle_1_x = 1000
+            circle_1_y = 1000
+            circle_2_x = 1000
+            circle_2_y = 1000
+            circle_3_x = 1000
+            circle_3_y = 1000
+            circle_4_x = 1000
+            circle_4_y = 1000
+            circle_5_x = 1000
+            circle_5_y = 1000
+            x_1_x = 1000
+            x_1_y = 1000
+            x_2_x = 1000
+            x_2_y = 1000
+            x_3_x = 1000
+            x_3_y = 1000
+            x_4_x = 1000
+            x_4_y = 1000
             current_screen = 0
-            print("CKICKED")
-        if (x > 430 and x < 480 and y < 430 and y > 480):
-            current_screen = 1
-            #reset everything
+            print("BA")
+
+
+    if current_screen == 1:
+        # new game button
+        if (x > 305 and x < 495 and y < 475 and y > 425):
+            circle_1_x = 1000
+            circle_1_y = 1000
+            circle_2_x = 1000
+            circle_2_y = 1000
+            circle_3_x = 1000
+            circle_3_y = 1000
+            circle_4_x = 1000
+            circle_4_y = 1000
+            circle_5_x = 1000
+            circle_5_y = 1000
+            x_1_x = 1000
+            x_1_y = 1000
+            x_2_x = 1000
+            x_2_y = 1000
+            x_3_x = 1000
+            x_3_y = 1000
+            x_4_x = 1000
+            x_4_y = 1000
+            print("NEW")
+
 
     if current_screen == 2:
         if (x > 30 and x < 130 and y > 425 and y < 475):
             current_screen = 0
         elif (x > 350 and x < 450 and y > 20 and y < 80):
             current_screen = 1
+            circle_1_x = 1000
+            circle_1_y = 1000
+            circle_2_x = 1000
+            circle_2_y = 1000
+            circle_3_x = 1000
+            circle_3_y = 1000
+            circle_4_x = 1000
+            circle_4_y = 1000
+            circle_5_x = 1000
+            circle_5_y = 1000
+            x_1_x = 1000
+            x_1_y = 1000
+            x_2_x = 1000
+            x_2_y = 1000
+            x_3_x = 1000
+            x_3_y = 1000
+            x_4_x = 1000
+            x_4_y = 1000
 
 
 def start_screen():
