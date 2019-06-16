@@ -28,9 +28,6 @@ x_3_y = 1000
 x_4_x = 1000
 x_4_y = 1000
 
-#the buttons
-button_1 = [150, 350, 98, 98]
-
 #screen changer
 current_screen = 0
 
@@ -78,6 +75,7 @@ def on_mouse_press(x, y, button, modifiers):
             x_3_y = 1000
             x_4_x = 1000
             x_4_y = 1000
+            counter = 0
 
     if current_screen == 0:
         if (x > 335 and x < 500 and y > 0 and y < 335):
@@ -448,9 +446,8 @@ def on_mouse_press(x, y, button, modifiers):
             x_3_y = 1000
             x_4_x = 1000
             x_4_y = 1000
+            counter = 0
             current_screen = 0
-            print("BA")
-
 
     if current_screen == 1:
         # new game button
@@ -473,12 +470,13 @@ def on_mouse_press(x, y, button, modifiers):
             x_3_y = 1000
             x_4_x = 1000
             x_4_y = 1000
-            print("NEW")
-
+            counter = 0
 
     if current_screen == 2:
-        if (x > 30 and x < 130 and y > 425 and y < 475):
+        # back
+        if (x > 50 and x < 150 and y > 25 and y < 75):
             current_screen = 0
+        # play game
         elif (x > 350 and x < 450 and y > 20 and y < 80):
             current_screen = 1
             circle_1_x = 1000
@@ -499,6 +497,7 @@ def on_mouse_press(x, y, button, modifiers):
             x_3_y = 1000
             x_4_x = 1000
             x_4_y = 1000
+            counter = 0
 
 
 def start_screen():
